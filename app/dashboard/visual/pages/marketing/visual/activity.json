@@ -1,0 +1,242 @@
+{
+    "scope": "activity",
+    "type": "containerSimple",
+    "prps": {
+        "width": "30%",
+        "height": "300px",
+        "roundedBorders": true,
+        "backgroundColor": "grey",
+        "margin": "20px 20px 0px 0px",
+        "padding": true
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "Activity",
+                "color": "white",
+                "fontSize": "20px",
+                "fontWeight": 800,
+                "marginBottom": "mediumPadding"
+            }
+        },
+        {
+            "relId": "weekly",
+            "type": "container",
+            "prps": {
+                "position": "absolute",
+                "top": "mediumPadding",
+                "right": "mediumPadding",
+                "dir": "horizontal",
+                "roundedBorders": true,
+                "backgroundColor": "darkGrey",
+                "padding": true,
+                "paddingSize": "tinyPadding",
+                "mainAxisAlign": "center",
+                "crossAxisAlign": "center",
+                "canClick": true,
+                "fireScript": {
+                    "actions": [
+                        {
+                            "type": "setState",
+                            "target": "||activity.stats||",
+                            "key": "staticData",
+                            "value": [
+                                {
+                                    "title": "Clicks",
+                                    "stats": "56289524"
+                                },
+                                {
+                                    "title": "Sales",
+                                    "stats": "964"
+                                },
+                                {
+                                    "title": "Unique Views",
+                                    "stats": "293618"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "setState",
+                            "key": "vis",
+                            "value": false
+                        },
+                        {
+                            "type": "setState",
+                            "target": "||activity.monthly||",
+                            "key": "vis",
+                            "value": true
+                        },
+                        {
+                            "type": "setState",
+                            "target": "||activity||",
+                            "key": "backgroundColor",
+                            "value": "darkGrey"
+                        },
+                        {
+                            "type": "setState",
+                            "target": "||activity.bottomNote||",
+                            "key": "color",
+                            "value": "#ffffff"
+                        }
+                    ]
+                }
+            },
+            "wgts": [
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Weekly View",
+                        "color": "white",
+                        "fontSize": "12px"
+                    }
+                }
+            ]
+        },
+        {
+            "relId": "monthly",
+            "type": "container",
+            "prps": {
+                "position": "absolute",
+                "top": "mediumPadding",
+                "right": "mediumPadding",
+                "dir": "horizontal",
+                "roundedBorders": true,
+                "backgroundColor": "#ffffff",
+                "padding": true,
+                "paddingSize": "tinyPadding",
+                "mainAxisAlign": "center",
+                "crossAxisAlign": "center",
+                "canClick": true,
+                "vis": false,
+                "fireScript": {
+                    "actions": [
+                        {
+                            "type": "setState",
+                            "target": "||activity.stats||",
+                            "key": "staticData",
+                            "value": [
+                                {
+                                    "title": "Clicks",
+                                    "stats": "2849524"
+                                },
+                                {
+                                    "title": "Sales",
+                                    "stats": "584"
+                                },
+                                {
+                                    "title": "Unique Views",
+                                    "stats": "684951"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "setState",
+                            "key": "vis",
+                            "value": false
+                        },
+                        {
+                            "type": "setState",
+                            "target": "||activity.weekly||",
+                            "key": "vis",
+                            "value": true
+                        },
+                        {
+                            "type": "setState",
+                            "target": "||activity||",
+                            "key": "backgroundColor",
+                            "value": "grey"
+                        },
+                        {
+                            "type": "setState",
+                            "target": "||activity.bottomNote||",
+                            "key": "color",
+                            "value": "black"
+                        }
+                    ]
+                }
+            },
+            "wgts": [
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Monthly View",
+                        "color": "#000000",
+                        "fontSize": "12px"
+                    }
+                }
+            ]
+        },
+        {
+            "relId": "stats",
+            "type": "repeater",
+            "prps": {
+                "staticData": [
+                    {
+                        "title": "Clicks",
+                        "stats": "2849524"
+                    },
+                    {
+                        "title": "Sales",
+                        "stats": "584"
+                    },
+                    {
+                        "title": "Unique Views",
+                        "stats": "684951"
+                    }
+                ],
+                "rowMda": {
+                    "type": "containerSimple",
+                    "prps": {
+                        "dir": "horizontal",
+                        "autoChildMargins": true
+                    },
+                    "wgts": [
+                        {
+                            "type": "containerSimple",
+                            "prps": {
+                                "width": "40%"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "((rowData.title))",
+                                        "color": "white",
+                                        "fontSize": "18px"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "containerSimple",
+                            "prps": {
+                                "width": "40%"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "((rowData.stats))",
+                                        "color": "white",
+                                        "fontSize": "18px"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "relId": "bottomNote",
+            "type": "label",
+            "prps": {
+                "cpt": "* Your data updates every 2 hours",
+                "color": "black",
+                "marginTop": "auto",
+                "italic": true
+            }
+        }
+    ]
+}

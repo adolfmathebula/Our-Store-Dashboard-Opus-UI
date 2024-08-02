@@ -1,0 +1,18 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "padding": true
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./../../assets/menuTitle",
+                    "traitPrps": {
+                        "pageTitle": "Customers"
+                    }
+                }
+            ]
+        }
+    ]
+}

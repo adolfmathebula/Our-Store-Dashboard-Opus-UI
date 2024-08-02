@@ -1,0 +1,81 @@
+{
+    "acceptPrps": {
+        "label": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "btnClickPage": {
+            "type": "string",
+            "dft": "initialScreen"
+        }
+    },
+    "type": "container",
+    "prps": {
+        "dir": "horizontal",
+        "crossAxisAlign": "center",
+        "gap": "15px",
+        "width": "100%",
+        "backgroundColor": "#303030",
+        "padding": true,
+        "paddingSize": "smallPadding mediumPadding smallPadding smallPadding",
+        "roundedBorders": true,
+        "border": "2px solid transparent",
+        "canHover": true,
+        "canClick": true,
+        "hoverPrps": {
+            "on": {
+                "border": "2px solid white"
+            },
+            "off": {
+                "border": "2px solid transparent"
+            }
+        },
+        "fireScript": {
+            "actions": [
+                {
+                    "type": "setState",
+                    "target": "||contentArea.mainViewPort||",
+                    "key": "value",
+                    "value": "visual/pages/%btnClickPage%/index"
+                },
+                {
+                    "type": "setState",
+                    "target": "||menu||",
+                    "key": "currentPage",
+                    "value": "%btnClickPage%"
+                },
+                {
+                    "type": "log",
+                    "msg": "{{state.||menu||.currentPage}}"
+                }
+            ]
+        },
+        "flows": [
+            {
+                "from": "||menu||",
+                "fromKey": "currentPage",
+                "toKey": "backgroundColor",
+                "mapFunctionString": "(v) => {if (v === $btnClickPage$ ) return 'dashOrange'; else return '#303030'}"
+            }
+        ]
+    },
+    "wgts": [
+        {
+            "type": "icon",
+            "prps": {
+                "value": "%icon%",
+                "color": "white",
+                "fontSize": "16px"
+            }
+        },
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "%label%",
+                "color": "white"
+            }
+        }
+    ]
+}

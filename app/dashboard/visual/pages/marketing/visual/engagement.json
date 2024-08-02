@@ -1,0 +1,104 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "width": "95%",
+        "height": "300px",
+        "roundedBorders": true,
+        "backgroundColor": "#ff8c00",
+        "margin": "20px 20px 0px 0px",
+        "dir": "horizontal",
+        "crossAxisAlign": "center",
+        "mainAxisAlign": "center",
+        "autoChildMargins": true,
+        "padding": true,
+        "paddingSize": "0px 100px",
+        "hasShadow": true
+    },
+    "wgts": [
+        {
+            "type": "containerSimple",
+            "prps": {
+                "marginRight": "auto",
+                "gap": "16px"
+            },
+            "wgts": [
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Engagement",
+                        "color": "white",
+                        "fontWeight": 900,
+                        "fontSize": "36px"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "General Statistics of user engagement process",
+                        "color": "white"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./engagementStat",
+                    "traitPrps": {
+                        "label": "This Day",
+                        "number": "135"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./engagementStat",
+                    "traitPrps": {
+                        "label": "This Week",
+                        "number": "521",
+                        "icon": "arrow_downward",
+                        "iconColor": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./engagementStat",
+                    "traitPrps": {
+                        "label": "This Month",
+                        "number": "1050"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./engagementStat",
+                    "traitPrps": {
+                        "label": "Pending",
+                        "number": "313",
+                        "icon": "hourglass_empty"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./engagementStat",
+                    "traitPrps": {
+                        "label": "Growth Rate",
+                        "labelColor": "white",
+                        "number": "62%",
+                        "bgColor": "black"
+                    }
+                }
+            ]
+        }
+    ]
+}

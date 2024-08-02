@@ -1,0 +1,251 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "padding": true
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./../../assets/menuTitle",
+                    "traitPrps": {
+                        "pageTitle": "Products"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "dir": "horizontal",
+                "flexWrap": "wrap"
+            },
+            "wgts": [
+                {
+                    "type": "repeater",
+                    "prps": {
+                        "data": [
+                            {
+                                "id": 1,
+                                "name": "Smartphone X",
+                                "brand": "TechCo",
+                                "price": 699.99,
+                                "category": "Electronics",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 2,
+                                "name": "Laptop Pro",
+                                "brand": "TopTech",
+                                "price": 1299.99,
+                                "category": "Computers",
+                                "in_stock": false,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 3,
+                                "name": "Wireless Headphones",
+                                "brand": "AudioTech",
+                                "price": 129.99,
+                                "category": "Audio",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 4,
+                                "name": "Smart Watch",
+                                "brand": "GadgetGear",
+                                "price": 199.99,
+                                "category": "Wearables",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 5,
+                                "name": "Digital Camera",
+                                "brand": "PhotoPro",
+                                "price": 499.99,
+                                "category": "Cameras",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 6,
+                                "name": "Gaming Console",
+                                "brand": "GameTech",
+                                "price": 399.99,
+                                "category": "Gaming",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 7,
+                                "name": "Fitness Tracker",
+                                "brand": "HealthGear",
+                                "price": 79.99,
+                                "category": "Fitness",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 8,
+                                "name": "4K Smart TV",
+                                "brand": "VisionTech",
+                                "price": 899.99,
+                                "category": "TVs",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 9,
+                                "name": "Portable Speaker",
+                                "brand": "SoundWave",
+                                "price": 59.99,
+                                "category": "Audio",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 10,
+                                "name": "E-book Reader",
+                                "brand": "ReadTech",
+                                "price": 129.99,
+                                "category": "Books",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 11,
+                                "name": "Ultra Thin Laptop",
+                                "brand": "SlimTech",
+                                "price": 1499.99,
+                                "category": "Computers",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 12,
+                                "name": "Noise-Canceling Headphones",
+                                "brand": "QuietSound",
+                                "price": 199.99,
+                                "category": "Audio",
+                                "in_stock": false,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 13,
+                                "name": "VR Gaming Headset",
+                                "brand": "ImmerseTech",
+                                "price": 299.99,
+                                "category": "Gaming",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 14,
+                                "name": "Smart Home Security Camera",
+                                "brand": "SecureCam",
+                                "price": 159.99,
+                                "category": "Security",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 15,
+                                "name": "Professional DSLR Camera",
+                                "brand": "ProCapture",
+                                "price": 899.99,
+                                "category": "Cameras",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 16,
+                                "name": "Wireless Charging Pad",
+                                "brand": "ChargePro",
+                                "price": 49.99,
+                                "category": "Accessories",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 17,
+                                "name": "High-Performance Gaming Mouse",
+                                "brand": "GameMaster",
+                                "price": 79.99,
+                                "category": "Gaming",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 18,
+                                "name": "4K OLED Smart TV",
+                                "brand": "VisualDelight",
+                                "price": 1299.99,
+                                "category": "TVs",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 19,
+                                "name": "Waterproof Bluetooth Speaker",
+                                "brand": "AquaSound",
+                                "price": 69.99,
+                                "category": "Audio",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            },
+                            {
+                                "id": 20,
+                                "name": "Ergonomic Office Chair",
+                                "brand": "ComfortPlus",
+                                "price": 249.99,
+                                "category": "Furniture",
+                                "in_stock": true,
+                                "image": "http://placehold.it/25x25"
+                            }
+                        ],
+                        "rowMda": {
+                            "type": "containerSimple",
+                            "prps": {
+                                "width": "270px",
+                                "gap": "5px",
+                                "padding": true,
+                                "paddingSize": "5px"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "image",
+                                    "prps": {
+                                        "value": "((rowData.image))",
+                                        "width": "90%"
+                                    }
+                                },
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "((rowData.name))",
+                                        "color": "black",
+                                        "position": "absolute",
+                                        "left": "30px",
+                                        "bottom": "50px",
+                                        "fontWeight": 600
+                                    }
+                                },
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "Price: ((rowData.price)) Available: ((rowData.in_stock)) ",
+                                        "color": "black",
+                                        "fontWeight": 600
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

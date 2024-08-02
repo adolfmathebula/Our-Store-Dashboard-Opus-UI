@@ -1,0 +1,46 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "singlePage": true,
+        "backgroundColor": "rgba(100%,64.7%,0%, 10%)",
+        "dir": "horizontal",
+        "width": "100%"
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "visual/menu/index",
+                    "traitPrps": {}
+                }
+            ]
+        },
+        {
+            "scope": "contentArea",
+            "type": "containerSimple",
+            "prps": {
+                "width": "88%"
+            },
+            "wgts": [
+                {
+                    "traits": [
+                        {
+                            "trait": "visual/assets/topbar"
+                        }
+                    ],
+                    "prps": {
+                        "borderBottom": "3px solid lightGrey"
+                    }
+                },
+                {
+                    "relId": "mainViewPort",
+                    "type": "viewport",
+                    "prps": {
+                        "width": "100%",
+                        "value": "visual/pages/initialScreen/index"
+                    }
+                }
+            ]
+        }
+    ]
+}

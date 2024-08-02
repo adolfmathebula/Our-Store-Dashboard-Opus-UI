@@ -1,0 +1,12 @@
+{
+	"acceptPrps": {
+		"title": {
+			"type": "string",
+			"desc": "The title string"
+		}
+	},
+	"type": "title",
+	"prps": {
+		"cpt": "%title%"
+	}
+}

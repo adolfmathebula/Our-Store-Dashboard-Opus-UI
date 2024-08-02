@@ -1,0 +1,140 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "backgroundColor": "white",
+        "roundedBorders": true,
+        "height": "fit-content",
+        "padding": true,
+        "paddingSize": "mediumPadding",
+        "hasShadow": true
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "Payment statistics",
+                "color": "black",
+                "fontWeight": "800"
+            }
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "marginTop": "smallPadding"
+            },
+            "wgts": [
+                {
+                    "type": "repeater",
+                    "prps": {
+                        "staticData": [
+                            {
+                                "title": "Total transaction",
+                                "icon": "account_balance_wallet",
+                                "number": "$1,200.44",
+                                "percentage": "25%",
+                                "percentageIcon": "arrow_upward",
+                                "percentageColor": "darkGreen",
+                                "bgPercentageColor": "lightGreen"
+                            },
+                            {
+                                "title": "Confirm Orders",
+                                "icon": "paid",
+                                "number": "345",
+                                "percentage": "1.8%",
+                                "percentageIcon": "arrow_downward",
+                                "percentageColor": "darkRed",
+                                "bgPercentageColor": "pink"
+                            },
+                            {
+                                "title": "Order Delivered",
+                                "icon": "done",
+                                "number": "2309",
+                                "percentage": "33%",
+                                "percentageIcon": "arrow_upward",
+                                "percentageColor": "darkGreen",
+                                "bgPercentageColor": "lightGreen"
+                            }
+                        ],
+                        "rowMda": {
+                            "type": "containerSimple",
+                            "prps": {
+                                "dir": "horizontal",
+                                "crossAxisAlign": "center",
+                                "autoChildMargins": true,
+                                "autoChildMarginsSize": "tinyPadding",
+                                "borderBottom": "2px solid lightGrey",
+                                "padding": true,
+                                "paddingSize": "0px 0px smallPadding 0px",
+                                "marginBottom": "smallPadding"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "icon",
+                                    "prps": {
+                                        "value": "((rowData.icon))",
+                                        "color": "dashOrange"
+                                    }
+                                },
+                                {
+                                    "type": "containerSimple",
+                                    "prps": {
+                                        "flex": true
+                                    },
+                                    "wgts": [
+                                        {
+                                            "type": "label",
+                                            "prps": {
+                                                "cpt": "((rowData.title))",
+                                                "color": "mediumGrey",
+                                                "fontSize": "12px"
+                                            }
+                                        },
+                                        {
+                                            "type": "label",
+                                            "prps": {
+                                                "cpt": "((rowData.number))",
+                                                "color": "black"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "containerSimple",
+                                    "prps": {
+                                        "dir": "horizontal",
+                                        "crossAxisAlign": "center",
+                                        "backgroundColor": "((rowData.bgPercentageColor))",
+                                        "padding": true,
+                                        "paddingSize": "tinyPadding",
+                                        "borderRadius": "30px",
+                                        "marginRight": "auto"
+                                    },
+                                    "wgts": [
+                                        {
+                                            "type": "icon",
+                                            "prps": {
+                                                "value": "((rowData.percentageIcon))",
+                                                "color": "((rowData.percentageColor))",
+                                                "fontSize": "10px",
+                                                "fontWeight": "500"
+                                            }
+                                        },
+                                        {
+                                            "type": "label",
+                                            "prps": {
+                                                "cpt": "((rowData.percentage))",
+                                                "color": "((rowData.percentageColor))",
+                                                "fontSize": "10px",
+                                                "fontWeight": "500"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

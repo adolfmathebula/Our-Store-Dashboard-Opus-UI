@@ -1,0 +1,149 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "width": "30%",
+        "height": "300px",
+        "roundedBorders": true,
+        "backgroundColor": "black",
+        "margin": "20px 20px 0px 0px",
+        "padding": true
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "Performance",
+                "color": "white",
+                "fontSize": "20px",
+                "fontWeight": 800,
+                "marginBottom": "mediumPadding"
+            }
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "dir": "horizontal",
+                "gap": "50px",
+                "marginBottom": "20px"
+            },
+            "wgts": [
+                {
+                    "type": "containerSimple",
+                    "prps": {},
+                    "wgts": [
+                        {
+                            "type": "label",
+                            "prps": {
+                                "cpt": "78%",
+                                "color": "white",
+                                "fontSize": "36px",
+                                "fontWeight": 800
+                            }
+                        },
+                        {
+                            "type": "label",
+                            "prps": {
+                                "cpt": "Icome",
+                                "color": "white"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "containerSimple",
+                    "prps": {},
+                    "wgts": [
+                        {
+                            "type": "label",
+                            "prps": {
+                                "cpt": "44%",
+                                "color": "white",
+                                "fontSize": "36px",
+                                "fontWeight": 800
+                            }
+                        },
+                        {
+                            "type": "label",
+                            "prps": {
+                                "cpt": "Spendings",
+                                "color": "white"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "dir": "horizontal",
+                "gap": "30px"
+            },
+            "wgts": [
+                {
+                    "type": "icon",
+                    "prps": {
+                        "value": "check_circle",
+                        "color": "dashOrange"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Spending On Course",
+                        "color": "White",
+                        "fontWeight": 600
+                    }
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "dir": "horizontal",
+                "gap": "30px"
+            },
+            "wgts": [
+                {
+                    "type": "icon",
+                    "prps": {
+                        "value": "radio_button_unchecked",
+                        "color": "dashOrange"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Deposit Programs",
+                        "color": "White",
+                        "fontWeight": 600
+                    }
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "dir": "horizontal",
+                "gap": "30px"
+            },
+            "wgts": [
+                {
+                    "type": "icon",
+                    "prps": {
+                        "value": "check_circle",
+                        "color": "dashOrange"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Cashback Programs",
+                        "color": "White",
+                        "fontWeight": 600
+                    }
+                }
+            ]
+        }
+    ]
+}

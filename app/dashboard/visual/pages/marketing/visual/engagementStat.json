@@ -1,0 +1,63 @@
+{
+    "acceptPrps": {
+        "label": {
+            "type": "string"
+        },
+        "labelColor": {
+            "type": "string",
+            "dft": "black"
+        },
+        "number": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string",
+            "dft": "arrow_upward"
+        },
+        "iconColor": {
+            "type": "string",
+            "dft": "green"
+        },
+        "bgColor": {
+            "type": "string",
+            "dft": "white"
+        }
+    },
+    "type": "container",
+    "prps": {
+        "width": "150px",
+        "height": "150px",
+        "backgroundColor": "%bgColor%",
+        "roundedBorders": true,
+        "mainAxisAlign": "center",
+        "crossAxisAlign": "center",
+        "hasShadow": true
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "%label%",
+                "color": "%labelColor%",
+                "fontSize": "18px"
+            }
+        },
+        {
+            "type": "icon",
+            "prps": {
+                "value": "%icon%",
+                "color": "$iconColor$",
+                "fontSize": "24px"
+            }
+        },
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "%number%",
+                "color": "%labelColor%",
+                "fontWeight": 900,
+                "fontSize": "36px"
+            }
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "roundedBorders": true,
+        "background": "url('https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2021_07/3451045/210218-product-of-the-year-2x1-cs.jpg')",
+        "backgroundSize": "cover",
+        "width": "100%",
+        "height": "600px",
+        "crossAxisAlign": "start",
+        "mainAxisAlign": "center"
+    },
+    "wgts": [
+        {
+            "type": "containerSimple",
+            "prps": {
+                "width": "100%",
+                "height": "100%",
+                "backgroundColor": "black",
+                "opacity": 0.6,
+                "padding": true,
+                "paddingSize": "0px 0px 0px 0px"
+            }
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "position": "absolute",
+                "top": "150px",
+                "left": "100px"
+            },
+            "wgts": [
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Highest Performing Products",
+                        "color": "white",
+                        "fontSize": "46px",
+                        "fontWeight": 800
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "1. Downy Intense Scent",
+                        "color": "white",
+                        "fontSize": "26px"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "2. Chips Deluxe",
+                        "color": "white",
+                        "fontSize": "26px"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "3. Dwan Power Wash",
+                        "color": "white",
+                        "fontSize": "26px"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "4. Black Bean Chips *",
+                        "color": "orange",
+                        "fontSize": "26px"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "4. RainX Water Repellent",
+                        "color": "white",
+                        "fontSize": "26px"
+                    }
+                },
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "* New Product In our catalogue",
+                        "color": "white",
+                        "italic": true,
+                        "marginTop": "50px"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "position": "absolute",
+                "top": "50px",
+                "right": "0px",
+                "width": "150px",
+                "height": "40px",
+                "backgroundColor": "#ff0000",
+                "crossAxisAlign": "center",
+                "mainAxisAlign": "center",
+                "borderRadius": "50px 0px 0px 50px"
+            },
+            "wgts": [
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Performance",
+                        "color": "white"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "padding": true
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./../../assets/menuTitle",
+                    "traitPrps": {
+                        "pageTitle": "Marketing"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "width": "100%",
+                "dir": "horizontal",
+                "flexWrap": "wrap"
+            },
+            "wgts": [
+                {
+                    "traits": [
+                        {
+                            "trait": "./visual/perfomance",
+                            "traitPrps": {}
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./visual/activity",
+                            "traitPrps": {}
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./visual/stats/bars",
+                            "traitPrps": {}
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./visual/engagement",
+                            "traitPrps": {}
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

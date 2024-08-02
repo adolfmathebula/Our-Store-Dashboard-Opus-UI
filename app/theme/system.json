@@ -1,0 +1,12 @@
+{
+  "themeConfig": {
+    "isStyleTheme": false
+  },
+  "mdaLocation": "http://localhost:3000",
+  "guitarImage": "{theme.system.mdaLocation}/images/guitar.jpg",
+  "webHeader": "{theme.system.mdaLocation}/images/header.jpg",
+  "pic1": "{theme.system.mdaLocation}/images/pic1.jpg",
+  "live1": "{theme.system.mdaLocation}/images/live1.jpg",
+  "live2": "{theme.system.mdaLocation}/images/live2.jpg",
+  "live3": "{theme.system.mdaLocation}/images/live3.jpg"
+}

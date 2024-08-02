@@ -1,0 +1,53 @@
+{
+    "scope": "menu",
+    "type": "containerSimple",
+    "prps": {
+        "backgroundColor": "black",
+        "width": "12%",
+        "padding": true,
+        "paddingSize": "mediumPadding",
+        "paddingBottom": "bigPadding",
+        "crossAxisAlign": "center",
+        "currentPage": "initialScreen"
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "OurStore",
+                "color": "#FD673A",
+                "fontSize": "24px",
+                "fontWeight": "900",
+                "margin": "mediumPadding 0px 0px mediumPadding"
+            }
+        },
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "Dashboard",
+                "color": "lightGrey",
+                "fontSize": "24px",
+                "marginBottom": "mediumPadding"
+            }
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./visual/menuContainer",
+                    "traitPrps": {}
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./visual/settingMode",
+                    "traitPrps": {}
+                }
+            ],
+            "prps": {
+                "marginTop": "auto"
+            }
+        }
+    ]
+}

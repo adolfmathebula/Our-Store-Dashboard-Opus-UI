@@ -1,0 +1,199 @@
+{
+    "scope": "ordersMain",
+    "type": "containerSimple",
+    "prps": {
+        "padding": true
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./../../assets/menuTitle",
+                    "traitPrps": {
+                        "pageTitle": "Orders"
+                    }
+                }
+            ]
+        },
+        {
+            "relId": "orders",
+            "traits": [
+                {
+                    "trait": "./orders"
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "dir": "horizontal",
+                "backgroundColor": "black",
+                "marginTop": "20px"
+            },
+            "wgts": [
+                {
+                    "traits": [
+                        {
+                            "trait": "./orderHeading",
+                            "traitPrps": {
+                                "title": "Order Number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./orderHeading",
+                            "traitPrps": {
+                                "title": "Customer Name"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./orderHeading",
+                            "traitPrps": {
+                                "title": "Order Date"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./orderHeading",
+                            "traitPrps": {
+                                "title": "Products"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./orderHeading",
+                            "traitPrps": {
+                                "title": "Total"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./orderHeading",
+                            "traitPrps": {
+                                "title": "Status"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./orderHeading",
+                            "traitPrps": {
+                                "title": "Address"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "repeater",
+            "prps": {
+                "staticData": "",
+                "flows": [
+                    {
+                        "from": "||ordersMain.orders||",
+                        "fromKey": "ordersList",
+                        "toKey": "staticData"
+                    }
+                ],
+                "rowMda": {
+                    "type": "containerSimple",
+                    "prps": {
+                        "dir": "horizontal",
+                        "borderBottom": "2px solid grey"
+                    },
+                    "wgts": [
+                        {
+                            "traits": [
+                                {
+                                    "trait": "./orderItem",
+                                    "traitPrps": {
+                                        "title": "((rowData.orderNumber))"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "traits": [
+                                {
+                                    "trait": "./orderItem",
+                                    "traitPrps": {
+                                        "title": "((rowData.customerName))"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "traits": [
+                                {
+                                    "trait": "./orderItem",
+                                    "traitPrps": {
+                                        "title": "((rowData.orderDate))"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "traits": [
+                                {
+                                    "trait": "./orderItem",
+                                    "traitPrps": {
+                                        "title": "((rowData.products.0.productName))"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "traits": [
+                                {
+                                    "trait": "./orderItem",
+                                    "traitPrps": {
+                                        "title": "((rowData.totalAmount))"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "traits": [
+                                {
+                                    "trait": "./orderItem",
+                                    "traitPrps": {
+                                        "title": "((rowData.status))"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "traits": [
+                                {
+                                    "trait": "./orderItem",
+                                    "traitPrps": {
+                                        "title": "((rowData.shippingAddress.street)), ((rowData.shippingAddress.city)), ((rowData.shippingAddress.state)), ((rowData.shippingAddress.country))"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "acceptPrps": {
+        "barHeight": {
+            "type": "string"
+        },
+        "label": {
+            "type": "string"
+        },
+        "barColor": {
+            "type": "string"
+        }
+    },
+    "type": "container",
+    "prps": {
+        "width": 50,
+        "transitionProperty": "height",
+        "transitionDuration": "500ms",
+        "backgroundColor": "$barColor$",
+        "mainAxisAlign": "center",
+        "height": 0,
+        "scps": [
+            {
+                "actions": [
+                    {
+                        "type": "setState",
+                        "key": "height",
+                        "value": "$barHeight$"
+                    }
+                ]
+            }
+        ]
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "%label%",
+                "color": "black",
+                "position": "absolute",
+                "top": "-30px",
+                "right": "0px"
+            }
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "dir": "horizontal",
+        "width": "100%",
+        "autoChildMargins": true
+    },
+    "wgts": [
+        {
+            "type": "repeater",
+            "prps": {
+                "staticData": [
+                    {
+                        "title": "Revenue",
+                        "amount": "$1,2000.44",
+                        "icon": "payments",
+                        "days": "From last 12 days",
+                        "bgColor": "black"
+                    },
+                    {
+                        "title": "Tip amount",
+                        "amount": "$190,21",
+                        "icon": "request_quote",
+                        "days": "From last 12 days",
+                        "bgColor": "#444444"
+                    },
+                    {
+                        "title": "Paid Orders",
+                        "amount": "324",
+                        "icon": "paid",
+                        "days": "From last 12 days",
+                        "bgColor": "grey"
+                    }
+                ],
+                "rowMda": {
+                    "type": "container",
+                    "prps": {
+                        "flex": true,
+                        "roundedBorders": true,
+                        "backgroundColor": "((rowData.bgColor))",
+                        "padding": true,
+                        "paddingSize": "mediumPadding",
+                        "height": "fit-content"
+                    },
+                    "wgts": [
+                        {
+                            "type": "label",
+                            "prps": {
+                                "cpt": "((rowData.title))",
+                                "color": "white"
+                            }
+                        },
+                        {
+                            "type": "containerSimple",
+                            "prps": {
+                                "dir": "horizontal",
+                                "crossAxisAlign": "center"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "icon",
+                                    "prps": {
+                                        "value": "((rowData.icon))",
+                                        "color": "dashOrange"
+                                    }
+                                },
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "((rowData.amount))",
+                                        "color": "white",
+                                        "fontSize": "24px",
+                                        "marginLeft": "smallPadding"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "label",
+                            "prps": {
+                                "cpt": "((rowData.days))",
+                                "color": "mediumGrey"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

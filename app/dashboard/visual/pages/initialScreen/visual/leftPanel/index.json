@@ -1,0 +1,29 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "width": "65vw",
+        "padding": true,
+        "paddingSize": "smallPadding"
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./stats",
+                    "traitPrps": {}
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./performingProducts",
+                    "traitPrps": {}
+                }
+            ],
+            "prps": {
+                "marginTop": "mediumPadding"
+            }
+        }
+    ]
+}

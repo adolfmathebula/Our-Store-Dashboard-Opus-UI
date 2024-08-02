@@ -1,0 +1,30 @@
+{
+    "type": "containerSimple",
+    "prps": {},
+    "wgts": [
+        {
+            "type": "containerSimple",
+            "prps": {
+                "width": "100%",
+                "dir": "horizontal",
+                "padding": true
+            },
+            "wgts": [
+                {
+                    "traits": [
+                        {
+                            "trait": "./visual/leftPanel/index"
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./visual/rightPanel/index"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

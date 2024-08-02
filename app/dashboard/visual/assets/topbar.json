@@ -1,0 +1,145 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "dir": "horizontal",
+        "width": "100%",
+        "padding": true,
+        "paddingSize": "mediumPadding bigPadding"
+    },
+    "wgts": [
+        {
+            "type": "containerSimple",
+            "prps": {
+                "width": "60vw",
+                "borderRadius": "30px",
+                "border": "2px solid grey",
+                "dir": "horizontal",
+                "padding": true,
+                "paddingSize": "tinyPadding mediumPadding",
+                "crossAxisAlign": "center"
+            },
+            "wgts": [
+                {
+                    "type": "icon",
+                    "prps": {
+                        "value": "search",
+                        "color": "mediumGrey"
+                    }
+                },
+                {
+                    "type": "input",
+                    "prps": {
+                        "placeholder": "search",
+                        "marginLeft": "15px",
+                        "width": "80%"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "dir": "horizontal",
+                "marginLeft": "auto"
+            },
+            "wgts": [
+                {
+                    "traits": [
+                        {
+                            "trait": "./roundButton",
+                            "traitPrps": {
+                                "icon": "notifications",
+                                "iconColor": "black",
+                                "iconHoverColor": "white",
+                                "bgColor": "transparent",
+                                "bgHoverColor": "dashOrange"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "traits": [
+                        {
+                            "trait": "./roundButton",
+                            "traitPrps": {
+                                "icon": "mail",
+                                "iconColor": "black",
+                                "iconHoverColor": "white",
+                                "bgColor": "transparent",
+                                "bgHoverColor": "dashOrange"
+                            }
+                        }
+                    ],
+                    "prps": {
+                        "marginLeft": "15px"
+                    }
+                },
+                {
+                    "type": "containerSimple",
+                    "prps": {
+                        "width": "3px",
+                        "height": "50px",
+                        "backgroundColor": "mediumGrey",
+                        "marginLeft": "15px"
+                    }
+                },
+                {
+                    "type": "containerSimple",
+                    "prps": {
+                        "dir": "horizontal",
+                        "placeholder": "search",
+                        "marginLeft": "15px",
+                        "borderRadius": "30px",
+                        "border": "2px solid grey",
+                        "padding": true,
+                        "paddingSize": "tinyPadding mediumPadding tinyPadding smallPadding",
+                        "crossAxisAlign": "center"
+                    },
+                    "wgts": [
+                        {
+                            "type": "containerSimple",
+                            "prps": {
+                                "borderRadius": "50px",
+                                "overflow": "hidden"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "image",
+                                    "prps": {
+                                        "value": "https://reqres.in/img/faces/9-image.jpg",
+                                        "width": "30px",
+                                        "height": "30px"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "containerSimple",
+                            "prps": {
+                                "marginLeft": "15px"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "Sales Agent",
+                                        "color": "black",
+                                        "fontWeight": "800"
+                                    }
+                                },
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "Mathebula A",
+                                        "color": "black",
+                                        "fontSize": "10px"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

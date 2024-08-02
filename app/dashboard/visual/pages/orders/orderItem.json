@@ -1,0 +1,22 @@
+{
+    "acceptPrps": {
+        "title": {
+            "type": "string"
+        }
+    },
+    "type": "containerSimple",
+    "prps": {
+        "padding": true,
+        "paddingSize": "tinyPadding smallPadding",
+        "width": "200px"
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "%title%",
+                "color": "black"
+            }
+        }
+    ]
+}

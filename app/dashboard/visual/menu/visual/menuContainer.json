@@ -1,0 +1,93 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "autoChildMargins": true,
+        "autoChildMarginsSize": "mediumPadding"
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./menuTab",
+                    "traitPrps": {
+                        "icon": "home",
+                        "label": "Home",
+                        "btnClickPage": "initialScreen"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./menuTab",
+                    "traitPrps": {
+                        "icon": "sell",
+                        "label": "Orders",
+                        "btnClickPage": "orders"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./menuTab",
+                    "traitPrps": {
+                        "icon": "shopping_cart",
+                        "label": "Products",
+                        "btnClickPage": "products"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./menuTab",
+                    "traitPrps": {
+                        "icon": "group",
+                        "label": "Customers",
+                        "btnClickPage": "customers"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./menuTab",
+                    "traitPrps": {
+                        "icon": "bar_chart",
+                        "label": "Marketing",
+                        "btnClickPage": "marketing"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./menuTab",
+                    "traitPrps": {
+                        "icon": "payments",
+                        "label": "Discounts",
+                        "btnClickPage": "discounts"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./menuTab",
+                    "traitPrps": {
+                        "icon": "add_reaction",
+                        "label": "Add ons",
+                        "btnClickPage": "addons"
+                    }
+                }
+            ]
+        }
+    ]
+}

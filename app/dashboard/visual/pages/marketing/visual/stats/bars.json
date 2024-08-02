@@ -1,0 +1,154 @@
+{
+    "scope": "bars",
+    "type": "containerSimple",
+    "prps": {
+        "width": "30%",
+        "height": "300px",
+        "roundedBorders": true,
+        "backgroundColor": "lightGrey",
+        "border": "0px solid grey",
+        "margin": "20px 20px 0px 0px",
+        "crossAxisAlign": "end",
+        "padding": true,
+        "paddingSize": "bigPadding bigPadding 0px bigPadding",
+        "autoChildMargins": true,
+        "dir": "horizontal"
+    },
+    "wgts": [
+        {
+            "type": "container",
+            "prps": {
+                "position": "absolute",
+                "top": "mediumPadding",
+                "right": "mediumPadding",
+                "dir": "horizontal",
+                "roundedBorders": true,
+                "backgroundColor": "darkGrey",
+                "padding": true,
+                "paddingSize": "tinyPadding",
+                "mainAxisAlign": "center",
+                "crossAxisAlign": "center",
+                "canClick": true,
+                "vis": true,
+                "fireScript": {
+                    "actions": [
+                        {
+                            "type": "setState",
+                            "target": "||bars.barsDisplay||",
+                            "key": "staticData",
+                            "value": [
+                                {
+                                    "height": 101,
+                                    "label": "Views",
+                                    "color": "green"
+                                },
+                                {
+                                    "height": 180,
+                                    "label": "Sales",
+                                    "color": "darkGrey"
+                                },
+                                {
+                                    "height": 150,
+                                    "label": "Clicks",
+                                    "color": "darkBlue"
+                                },
+                                {
+                                    "height": 70,
+                                    "label": "Perfomance",
+                                    "color": "darkGrey"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "wgts": [
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Refresh",
+                        "color": "white",
+                        "fontSize": "12px"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "container",
+            "prps": {
+                "position": "absolute",
+                "top": "70px",
+                "right": "mediumPadding",
+                "dir": "horizontal",
+                "roundedBorders": true,
+                "backgroundColor": "darkGrey",
+                "padding": true,
+                "paddingSize": "tinyPadding",
+                "mainAxisAlign": "center",
+                "crossAxisAlign": "center",
+                "canClick": true,
+                "vis": true,
+                "fireScript": {
+                    "actions": [
+                        {
+                            "type": "setState",
+                            "target": "||bars.barsDisplay||",
+                            "key": "staticData",
+                            "value": []
+                        }
+                    ]
+                }
+            },
+            "wgts": [
+                {
+                    "type": "label",
+                    "prps": {
+                        "cpt": "Hide",
+                        "color": "white",
+                        "fontSize": "12px"
+                    }
+                }
+            ]
+        },
+        {
+            "relId": "barsDisplay",
+            "type": "repeater",
+            "prps": {
+                "staticData": [
+                    {
+                        "height": 100,
+                        "label": "Views",
+                        "color": "green"
+                    },
+                    {
+                        "height": 180,
+                        "label": "Sales",
+                        "color": "darkGrey"
+                    },
+                    {
+                        "height": 150,
+                        "label": "Clicks",
+                        "color": "darkBlue"
+                    },
+                    {
+                        "height": 70,
+                        "label": "Perfomance",
+                        "color": "darkGrey"
+                    }
+                ],
+                "rowMda": {
+                    "traits": [
+                        {
+                            "trait": "./bar",
+                            "traitPrps": {
+                                "barHeight": "{{rowData.height}}",
+                                "label": "((rowData.label))",
+                                "barColor": "{{rowData.color}}"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "scope": "btn",
+    "type": "containerSimple",
+    "prps": {
+        "dir": "horizontal",
+        "autoChildMargins": true,
+        "autoChildMarginsSize": "mediumPadding"
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./../../assets/roundButton",
+                    "traitPrps": {
+                        "icon": "settings",
+                        "iconColor": "white",
+                        "iconHoverColor": "",
+                        "bgColor": "transparent",
+                        "bgHoverColor": "dashOrange"
+                    }
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./../../assets/roundButton",
+                    "traitPrps": {
+                        "icon": "contrast",
+                        "iconColor": "white",
+                        "iconHoverColor": "",
+                        "bgColor": "transparent",
+                        "bgHoverColor": "dashOrange"
+                    }
+                }
+            ]
+        }
+    ]
+}

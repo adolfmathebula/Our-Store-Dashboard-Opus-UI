@@ -1,0 +1,28 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "flex": true,
+        "padding": true,
+        "paddingSize": "smallPadding",
+        "height": "fit-content",
+        "gap": "24px"
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "./paymentStatistics",
+                    "traitPrps": {}
+                }
+            ]
+        },
+        {
+            "traits": [
+                {
+                    "trait": "./popularMenu",
+                    "traitPrps": {}
+                }
+            ]
+        }
+    ]
+}

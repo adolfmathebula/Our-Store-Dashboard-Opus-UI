@@ -1,0 +1,110 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "backgroundColor": "white",
+        "roundedBorders": true,
+        "height": "fit-content",
+        "padding": true,
+        "paddingSize": "mediumPadding",
+        "hasShadow": true
+    },
+    "wgts": [
+        {
+            "type": "label",
+            "prps": {
+                "cpt": "Payment statistics",
+                "color": "black",
+                "fontWeight": "800"
+            }
+        },
+        {
+            "type": "containerSimple",
+            "prps": {
+                "marginTop": "mediumPadding"
+            },
+            "wgts": [
+                {
+                    "type": "repeater",
+                    "prps": {
+                        "staticData": [
+                            {
+                                "title": "Grilled Fingerlings",
+                                "sold": "322",
+                                "amount": "$2,200.00"
+                            },
+                            {
+                                "title": "Asian pear salad",
+                                "sold": "234",
+                                "amount": "$1.643.04"
+                            },
+                            {
+                                "title": "Roasted Acorn",
+                                "sold": "112",
+                                "amount": "$900.02"
+                            },
+                            {
+                                "title": "Naine lobster",
+                                "sold": "98",
+                                "amount": "$812.33"
+                            },
+                            {
+                                "title": "Smothered chicken",
+                                "sold": "67",
+                                "amount": "$710.23"
+                            },
+                            {
+                                "title": "French Onion",
+                                "sold": "55",
+                                "amount": "$1630.63"
+                            }
+                        ],
+                        "rowMda": {
+                            "type": "containerSimple",
+                            "prps": {
+                                "dir": "horizontal",
+                                "crossAxisAlign": "center",
+                                "autoChildMargins": true,
+                                "autoChildMarginsSize": "tinyPadding",
+                                "borderBottom": "2px solid lightGrey",
+                                "padding": true,
+                                "paddingSize": "0px 0px smallPadding 0px",
+                                "marginBottom": "smallPadding"
+                            },
+                            "wgts": [
+                                {
+                                    "type": "containerSimple",
+                                    "prps": {},
+                                    "wgts": [
+                                        {
+                                            "type": "label",
+                                            "prps": {
+                                                "cpt": "((rowData.title))",
+                                                "fontWeight": "800"
+                                            }
+                                        },
+                                        {
+                                            "type": "label",
+                                            "prps": {
+                                                "cpt": "((rowData.sold)) Sold",
+                                                "color": "mediumGrey",
+                                                "fontSize": "12px"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "label",
+                                    "prps": {
+                                        "cpt": "((rowData.amount))",
+                                        "color": "grey",
+                                        "marginLeft": "auto"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "acceptPrps": {
+        "pageTitle": {
+            "type": "string"
+        }
+    },
+    "type": "label",
+    "prps": {
+        "padding": true,
+        "cpt": "%pageTitle%",
+        "color": "black",
+        "fontSize": "24px",
+        "fontWeight": "900",
+        "marginBottom": "10px"
+    }
+}

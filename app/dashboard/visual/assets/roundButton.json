@@ -1,0 +1,60 @@
+{
+    "acceptPrps": {
+        "icon": {
+            "type": "string"
+        },
+        "iconColor": {
+            "type": "string"
+        },
+        "iconHoverColor": {
+            "type": "string"
+        },
+        "bgColor": {
+            "type": "string"
+        },
+        "bgHoverColor": {
+            "type": "string"
+        }
+    },
+    "scope": "btn",
+    "type": "container",
+    "prps": {
+        "width": "fit-content",
+        "height": "fit-content",
+        "borderRadius": "50px",
+        "border": "2px solid %iconColor%",
+        "padding": true,
+        "paddingSize": "smallPadding",
+        "backgroundColor": "transparent",
+        "canHover": true,
+        "canClick": true,
+        "hoverPrps": {
+            "on": {
+                "backgroundColor": "%bgHoverColor%",
+                "border": "2px solid transparent"
+            },
+            "off": {
+                "backgroundColor": "%bgColor%",
+                "border": "2px solid %iconColor%"
+            }
+        }
+    },
+    "wgts": [
+        {
+            "type": "icon",
+            "prps": {
+                "value": "%icon%",
+                "color": "%iconColor%",
+                "fontSize": "18px",
+                "flows": [
+                    {
+                        "from": "||btn||",
+                        "fromKey": "hovered",
+                        "toKey": "color",
+                        "mapFunctionString": "v => v ? '%iconHoverColor%' : '%iconColor%'"
+                    }
+                ]
+            }
+        }
+    ]
+}
